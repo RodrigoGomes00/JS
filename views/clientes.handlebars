@@ -1,0 +1,17 @@
+<h1>Listar Clientes</h1>
+
+{{#each clientes}}
+    Nome: {{nome}}<br>
+    Email: {{email}}<br>
+    CPF ou CNPJ: {{cpf}}<br>
+    Telefone: {{telefone}}<br>
+    CEP: {{cep}}<br>
+    Logradouro: {{logradouro}}<br>
+    Numero: {{numero}}<br>
+    Bairro: {{bairro}}<br>
+    Cidade: {{cidade}}<br>
+    Estado: {{estado}}<br>
+    Cadastrado: {{#formatDate createdAt}}{{/formatDate}}<br>
+    <a href="/del-cliente/{{id}}"><button>Apagar</button></a>
+    <hr>
+{{/each}}
